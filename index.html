@@ -1,1 +1,38 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise 🎉</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Name Entry Screen -->
+    <div id="nameScreen" class="screen">
+        <h1>Enter Your Name 💖</h1>
+        <input type="text" id="nameInput" placeholder="Type your name...">
+        <button onclick="checkName()">Open Surprise</button>
+    </div>
+
+    <!-- Surprise Screen -->
+    <div id="surpriseScreen" class="screen hidden">
+        <div class="overlay"></div>
+        <iframe id="bgVideo" 
+            src="https://www.youtube.com/embed/VnKANqDpGF0?autoplay=1&mute=0&loop=1&playlist=VnKANqDpGF0" 
+            frameborder="0" allow="autoplay; fullscreen">
+        </iframe>
+
+        <div class="content">
+            <h1>Happy Birthday <span id="userName"></span> 🎂</h1>
+            <div class="slideshow">
+                <img id="slideImage" src="images/1.jpg" alt="Photo">
+            </div>
+            <p class="message">You are the most special person in my life ❤️</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
